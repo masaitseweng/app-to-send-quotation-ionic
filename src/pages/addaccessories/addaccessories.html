@@ -1,0 +1,28 @@
+<ion-header style="background-color:#d1d1d1">
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+  <button ion-button block color="danger" style="font-size: bold;font-size:30px;color:white" clear (click)="search()">
+       <!-- <ion-icon name='send'></ion-icon> -->
+      R {{new_price_formated}}
+  </button>
+
+</ion-header>
+
+
+
+
+
+<ion-content padding>
+
+
+<h1 style="text-align:center">{{name}}</h1>
+  <img src="{{picture}}"> 
+
+<!-- buttons -->
+    <button ion-button block color="danger" (click)="accessories()">Add Accessories</button>
+    <!-- <button ion-button block color="danger" (click)="quoteinstal()">Installation</button> -->
+
+</ion-content>

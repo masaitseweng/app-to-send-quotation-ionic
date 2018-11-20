@@ -1,0 +1,31 @@
+
+<ion-header style="background-color:#d1d1d1">
+
+  <ion-navbar >
+    <ion-title></ion-title>
+  </ion-navbar>
+
+  <button ion-button block color="danger" style="font-size: bold;font-size:30px;color:white" clear >
+       <!-- <ion-icon name='send'></ion-icon> -->
+      R {{new_price_formated}}
+  </button>
+
+</ion-header>
+
+
+<ion-content >
+
+  <ion-list text-wrap>
+
+     <ion-item  *ngFor="let subaccessory of displaysubaccessories;let i = index" >
+        <ion-label>{{subaccessory.name}} </ion-label>
+        <ion-checkbox color="danger" checked="false" [(ngModel)]="subaccessory.checked" (ionChange)="checkedAccessories(subaccessory,i)"></ion-checkbox>
+      </ion-item>
+
+        <button ion-button block color="danger" (click)="showConfirm()"> Add To Quote</button>
+        <button ion-button block color="danger" (click)="addanotheraccessories()">Add another accessories</button>
+
+
+   </ion-list>
+
+</ion-content>

@@ -1,0 +1,71 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>auto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+
+
+
+    <ion-list inset >
+      <button detail-none color="danger" ion-item *ngFor="let item of items" (click)="add(item)">
+        <ion-icon item-right  name="ios-arrow-forward-outline"></ion-icon>
+        {{item.Name }}
+      </button>
+    </ion-list>
+
+
+
+
+        <!-- <ion-card *ngFor="let item of items">
+          <ion-card-header style="background-color: #F53D3D" text-center >
+          {{item.ContactPerson}}
+          </ion-card-header>
+        
+          <ion-list>
+            <button ion-item>
+ 
+           {{item.ContactPerson}}
+            </button>
+        
+            <button ion-item>
+  
+            {{item.Name}}
+            </button>
+        
+            <button ion-item>
+            {{item.CONTACTCELLNUMBER}}
+            </button> 
+
+          </ion-list>
+
+              <ion-item color="danger" class="compact">
+
+                <ion-row no-padding>
+                  <ion-col col-8 no-padding text-wrap>
+
+                    <ion-icon name="locate" ></ion-icon>
+                  {{item.PhysicalAddress}}
+                   
+
+                  </ion-col>
+                  <ion-col col-4 style="text-align: right;">
+                    <button ion-button small outline (click)="add(item)" style="width: 64px;" color="gray">add</button>
+                  </ion-col>
+                </ion-row>
+
+              </ion-item>
+
+
+        </ion-card> -->
+
+
+</ion-content>

@@ -1,0 +1,150 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  
+<div *ngIf="auto">
+<ion-list>
+
+<ion-item>
+  <ion-avatar item-start>
+    <ion-icon name="ios-home-outline" item-start></ion-icon>
+  </ion-avatar>
+  <h2>Business Name</h2>
+  <h3>{{business.Name}}</h3>
+
+</ion-item>
+
+
+<ion-item>
+  <ion-avatar item-start>
+    <ion-icon name="ios-locate-outline" item-start></ion-icon>
+  </ion-avatar>
+  <h2>Address</h2>
+  <h3>{{business.PhysicalAddress}}</h3>
+
+</ion-item>
+
+<ion-item>
+  <ion-avatar item-start>
+    <ion-icon name="ios-contact-outline" item-start></ion-icon>
+  </ion-avatar>
+  <h2>Contact Person</h2>
+  <h3>{{business.ContactPerson}}</h3>
+
+</ion-item>
+
+
+<ion-item>
+  <ion-avatar item-start>
+    <ion-icon name="ios-call-outline" item-start></ion-icon>
+  </ion-avatar>
+  <h2>Contact No</h2>
+  <h3>{{business.CONTACTCELLNUMBER}}</h3>
+
+</ion-item>
+
+<ion-item>
+  <ion-avatar item-start>
+    <ion-icon name="ios-mail-outline" item-start></ion-icon>
+  </ion-avatar>
+  <h2>E-mail</h2>
+  <h3>{{business.CONTACTEMAIL}}</h3>
+
+</ion-item>
+
+
+
+  <ion-item class="style-item">
+    <ion-label color="danger">cc</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.cc"></ion-input>
+  </ion-item>
+  <ion-item class="style-item">
+    <ion-label color="danger">Delivery Time</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.deliverytime"></ion-input>
+  </ion-item>
+  <ion-item class="style-item">
+    <ion-label color="danger">Notes</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.notes"></ion-input>
+  </ion-item>
+
+
+</ion-list>
+</div>
+
+
+<div *ngIf="!auto">
+<ion-list>
+  <ion-item class="style-item">
+    <ion-label color="danger">Business Name</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.BusinessName"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="style-item">
+    <ion-label color="danger">Address</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.Address"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item class="style-item">
+    <ion-label color="danger">Contact Person</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.ContactPerson"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="style-item">
+    <ion-label color="danger">Contact No</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.ContactNo"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item class="style-item">
+    <ion-label color="danger">E-Mail</ion-label>
+    <ion-input class="style-input" type="email" [(ngModel)]="sendemailData.to"></ion-input>
+  </ion-item>
+
+  <ion-item class="style-item">
+    <ion-label color="danger">cc</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.cc"></ion-input>
+  </ion-item>
+  <ion-item class="style-item">
+    <ion-label color="danger">Delivery Time</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.deliverytime"></ion-input>
+  </ion-item>
+  <ion-item class="style-item">
+    <ion-label color="danger">Notes</ion-label>
+    <ion-input class="style-input" [(ngModel)]="sendemailData.notes"></ion-input>
+  </ion-item>
+
+
+</ion-list>
+</div>
+  
+
+
+
+
+
+
+
+  <button ion-button block color="danger" (click)="send()">
+
+      Send
+     </button>
+
+
+
+
+</ion-content>

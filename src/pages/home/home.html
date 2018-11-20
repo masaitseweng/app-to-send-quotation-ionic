@@ -1,0 +1,40 @@
+<ion-header >
+
+  <ion-navbar >
+    <ion-title>Home<div float-right class="version">version 4.9</div></ion-title>
+
+    <ion-buttons end>
+      <button ion-button  color="danger" tappable (click)="lockout()">
+        <ion-icon name="lock"></ion-icon>
+      </button>
+
+    </ion-buttons>
+  
+
+  </ion-navbar>
+
+
+
+</ion-header>
+
+
+<ion-content class="card-background-page " >
+
+
+
+<img src="assets/imgs/liftshiftlogo.png">
+
+
+ <ion-card class="ion-card" *ngFor="let craneDATA of cranes" (click)="Menu(craneDATA)">
+    <div class="card-title">{{craneDATA.name}}</div>
+  </ion-card>
+
+  <div >
+
+
+  </div>
+
+
+
+
+</ion-content>

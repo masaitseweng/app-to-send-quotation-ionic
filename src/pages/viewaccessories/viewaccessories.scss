@@ -1,0 +1,40 @@
+page-viewaccessories {
+
+    .grid-basic-page {
+
+        ion-col div {
+          background-color: #f0f5ff;
+          border: 1px solid #e6e9ee;
+          border-radius: 2px;
+          padding: 5px;
+          text-align: center;
+        }
+      
+        p {
+          padding: 10px 0 0 10px !important;
+          margin: 0;
+        }
+      
+      }
+      
+      ion-col{
+        background-color: red;
+        color:white;
+        border: 1px solid white;
+        // border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+      }
+      
+      img{
+        margin-top: 12px;
+      
+        height: 80px;
+        width: 80px;
+        margin: auto;
+        display: block;
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+
+}

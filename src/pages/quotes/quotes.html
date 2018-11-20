@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="card-background-page">
+
+
+    <img   src="assets/imgs/logo.jpg">
+
+    <ion-searchbar  style="background-color:red" placeholder="search by name" [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+  
+  <br>
+    <div>
+  
+    </div>
+    <ion-card class="ion-card" *ngFor="let quotedetails of quotedetails" (click)="viewquote(quotedetails)">
+      <div class="card-title">{{quotedetails.ref}}</div>
+    </ion-card>
+    
+
+</ion-content>

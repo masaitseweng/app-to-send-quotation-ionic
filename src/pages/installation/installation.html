@@ -1,0 +1,54 @@
+
+<ion-header style="background-color:#d1d1d1">
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+
+  <button ion-button block color="danger" style="font-size: bold;font-size:30px;color:white" clear (click)="search()">
+       <!-- <ion-icon name='send'></ion-icon> -->
+      R {{ price }}
+  </button>
+
+
+
+
+</ion-header>
+
+
+<ion-content >
+
+
+  <ion-list text-wrap >
+
+     <ion-item  block *ngFor="let installation of installations;let i = index;" >
+        <ion-label>{{installation.name}}</ion-label>
+        <ion-checkbox   color="danger" checked="false" [(ngModel)]="installation.checked" (ionChange)="select(installation,'top',price,RawCranePrice,installationprice,InstallationItem,i)"></ion-checkbox>
+      </ion-item>
+
+   </ion-list>
+
+
+
+
+   <button ion-button block color="danger" (click)="AddInstallation()">
+      Add 
+    </button>
+
+
+
+
+<!-- <button ion-button block color="danger" (click)="emailQuote()"> -->
+   <!-- <ion-icon name='send'></ion-icon> -->
+   <!-- Email Quote -->
+ <!-- </button> -->
+
+<!-- <button ion-button block (click)="viewQuote(pricedescripti)"> -->
+   <!-- <ion-icon name='eye'></ion-icon> -->
+   <!-- View Quote -->
+<!-- </button> -->
+
+
+
+</ion-content>

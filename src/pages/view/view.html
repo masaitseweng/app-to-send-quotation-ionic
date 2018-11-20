@@ -1,0 +1,87 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="grid-basic-page" padding>
+
+  <img  src="assets/imgs/logo.jpg">
+
+    <ion-grid>
+
+      <ion-row>
+        <ion-col col-8>
+        <strong>Description</strong>
+        </ion-col>
+        <ion-col col-4>
+        <strong>Amount</strong>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col col-8>
+          {{CraneName}}
+        </ion-col>
+        <ion-col col-4>
+        R{{formatoriginalpriceraw}}
+        </ion-col>
+      </ion-row>
+
+      <ion-row  *ngFor="let installation of installations" >
+        <ion-col col-8>
+          {{installation.name}}
+        </ion-col>
+        <ion-col col-4>
+          R{{installation.zar_amount}}
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col offset-4>
+          Sub Total
+        </ion-col>
+        <ion-col col-4>
+          R{{SubTotal}}
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col offset-4>
+           15% VAT
+        </ion-col>
+        <ion-col col-4>
+          R {{vat}}
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col offset-4>
+        Total
+        </ion-col>
+        <ion-col col-4>
+          R{{totalamount}}
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+
+    <button ion-button block color="danger" (click)="emailQuote()">
+       <!-- <ion-icon name='send'></ion-icon> -->
+       Email Quote
+     </button>
+
+
+
+
+
+
+</ion-content>

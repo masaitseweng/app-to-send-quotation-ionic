@@ -1,0 +1,57 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login <div float-right class="version">version 4.9</div></ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+
+
+<ion-content padding>
+
+
+
+<div class="login-image-style" >
+
+<img src="assets/imgs/liftshiftlogo.png">
+</div>
+
+
+
+<ion-list>
+
+  <ion-item class="style-item">
+    <ion-input class="style-input" [(ngModel)]="userData.email"   type="text" placeholder="Email Address"></ion-input>
+  </ion-item>
+
+  <ion-item class="style-item">
+    <ion-input class="style-input" [(ngModel)]="userData.password"    type="password" placeholder="Password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+
+
+
+
+<ion-buttons start class="btn-wrapper1" >
+  <button ion-button icon-only block (click)="onlogin(userData)">
+    <ion-icon name="log-in"  ios="ios-log-in" md="md-log-in"  color="nav1"></ion-icon>
+    Login
+  </button>
+</ion-buttons>
+
+
+<ion-buttons start class="btn-wrapper1" >
+  <button ion-button color="danger" icon-only block (click)="Remember(userData)">
+    <ion-icon name="log-in"  ios="ios-log-in" md="md-log-in"  ></ion-icon>
+    Remember Me
+  </button>
+</ion-buttons>
+
+
+</ion-content>

@@ -1,0 +1,20 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page "  padding>
+  <!-- /Users/masa/lift/src/pages/viewquote/logo.jpg -->
+    <img src="assets/imgs/liftshiftlogo.png">
+    <button ion-button block color="danger" (click)="Quotation()">Quotation</button>
+    <button ion-button *ngIf="discount != ''  "  block color="danger" (click)="dealerdiscount()">dealerdiscount</button>
+    <button ion-button block color="danger" (click)="Brochure()">Brochure</button> 
+
+
+
+</ion-content>

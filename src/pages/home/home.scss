@@ -1,0 +1,111 @@
+page-home {
+
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+    
+        }
+    
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: black;
+        }
+    
+    
+      }
+      .ion-card {
+            // background-color: red;
+            width: 300px;
+            height: 90px;
+            border-radius: 5px;
+             border: 3px solid red;
+    
+             margin: 0 auto 10px;
+    
+            //  margin:20 15px 15px 20;
+              max-width: 700px;
+        // width: 100px;
+    
+    
+        }
+    
+    
+        ion-list-header{
+    
+          color: blue;
+           font-family: verdana;
+           font-size: 300%;
+          text-align: center;
+    
+        }
+        .des{
+    
+        font-size: 20px;
+        margin-top: -20px;
+    
+    
+        }
+        .desprice{
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: -25px;
+            margin-right: 90px;
+    
+    
+        }
+    
+        ion-checkbox {
+          height: 50px;
+        }
+    
+    
+        ion-row.active {
+      background-color: #f5f5f5;
+    }
+    
+    ion-row.success {
+      background-color: #dff0d8;
+    }
+    
+    ion-row.warning {
+      background-color: #fcf8e3;
+    }
+    
+    ion-row.error {
+      background-color: #f2dede;
+    }
+
+    .version{
+      //  margin-right:1px;
+       font-size: 15px;
+        color: red;
+    
+     }
+    
+    
+    .grid-basic-page {
+    
+      ion-col div {
+        background-color: #f0f5ff;
+        border: 1px solid #e6e9ee;
+        border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+      }
+    
+      p {
+        padding: 10px 0 0 10px !important;
+        margin: 0;
+      }
+    
+    }
+    
+    
+
+}

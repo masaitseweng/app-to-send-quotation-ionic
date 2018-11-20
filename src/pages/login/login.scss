@@ -1,0 +1,98 @@
+page-login {
+
+
+  ion-content {
+    // background-color: coral;
+   // background-image: url('/assets/img/login/713.jpg');
+}
+
+
+
+.ion-list{
+  .item-content {
+  background-color: green;
+}
+
+}
+
+
+
+ img{
+
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width:100%;
+   height:auto;
+   padding-top: 20px;
+   padding-bottom: 40px;
+
+ }
+
+
+ion-item  {
+   border-color: rgba(0, 0, 0, 0);
+ background-color: rgba(0, 0, 0, 0);
+ color: red;
+ }
+
+
+ ion-label{
+
+   border-color: rgba(0, 0, 0, 0);
+ background-color: rgba(0, 0, 0, 0);
+ color: yellow;
+
+ }
+
+
+
+ .style-item{
+   padding: 0px !important;  border-bottom:none !important;border-top: none !important; margin-top: 10px;background: none;
+   border-bottom: 1px solid;
+   box-shadow: none;
+   color:yellow
+
+ }
+
+ .style-input{
+   color: black;
+    padding: 0px !important;  border-bottom:none !important;border-top: none !important;margin-top: 10px;background: none;
+   border-bottom: 1px solid;
+   box-shadow: none;
+ }
+
+ .button-style{
+   background-color: transparent;
+   color: white;
+   border-color: white;
+   border: 1px solid white;
+   margin-top: 20px;
+   height: 35px;
+   font-size: 14px;
+ }
+
+ .forgot-password-style{
+   text-decoration: underline;
+   margin-top: 20px;
+   color: white;
+   font-size: 14px;
+
+ }
+
+ .version{
+  //  margin-right:1px;
+   font-size: 15px;
+    color: red;
+
+ }
+
+ .login-image-style{
+
+   // -webkit-box-shadow: -14px -14px 9px -10px rgba(0,0,0,0.39);
+   // -moz-box-shadow: -14px -14px 9px -10px rgba(0,0,0,0.39);
+   // box-shadow: -14px -14px 9px -10px rgba(0,0,0,0.39);
+
+ }
+
+}

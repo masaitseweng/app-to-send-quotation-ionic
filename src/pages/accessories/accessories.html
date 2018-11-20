@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="card-background-page">
+
+    <img   src="assets/imgs/logo.jpg">
+
+    <ion-searchbar  style="background-color:red" placeholder="search by name" [(ngModel)]="searchTerm" (ionInput)="setModelItems()"></ion-searchbar>
+
+  <br>
+
+
+  <ion-card class="ion-card" *ngFor="let accessory of accessories" (click)="subaccessories(accessory)">
+    <div class="card-title">{{accessory.name}}</div>
+  </ion-card>
+
+
+</ion-content>

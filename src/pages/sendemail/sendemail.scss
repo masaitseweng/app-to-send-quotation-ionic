@@ -1,0 +1,68 @@
+page-sendemail {
+
+
+
+  ion-item  {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+
+
+  ion-label{
+
+    border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+
+  }
+
+
+
+  .style-item{
+    padding: 0px !important;  border-bottom:none !important;border-top: none !important; margin-top: 10px;background: none;
+    border-bottom: 1px solid;
+    box-shadow: none;
+
+  }
+
+  .style-input{
+    color: blue;  padding: 0px !important;  border-bottom:none !important;border-top: none !important;margin-top: 10px;background: none;
+    border-bottom: 1px solid;
+    box-shadow: none;
+
+     font-family:  Arial;
+     font-weight: bold;
+  }
+
+  .button-style{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border: 1px solid white;
+    margin-top: 20px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .forgot-password-style{
+    text-decoration: underline;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+
+  }
+
+  .login-image-style{
+
+    // -webkit-box-shadow: -14px -14px 9px -10px rgba(0,0,0,0.39);
+    // -moz-box-shadow: -14px -14px 9px -10px rgba(0,0,0,0.39);
+    // box-shadow: -14px -14px 9px -10px rgba(0,0,0,0.39);
+
+  }
+
+  ion-label{
+    color: red;
+  }
+
+}
